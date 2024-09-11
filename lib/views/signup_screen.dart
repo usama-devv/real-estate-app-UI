@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:real_estate_app_ui/views/home_screen.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
@@ -43,7 +45,9 @@ class SignupScreen extends StatelessWidget {
           ),
           const SizedBox(height: 30),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Get.to(() => const HomeScreen());
+            },
             child: Container(
               width: 320,
               height: 65,
