@@ -15,9 +15,12 @@ class SignupScreen extends StatelessWidget {
           Container(
             width: size.width,
             height: size.height * 0.6,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(40),
-              image: const DecorationImage(
+            decoration: const BoxDecoration(
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(40),
+                bottomLeft: Radius.circular(40),
+              ),
+              image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage("assets/images/onboarding.jpg"),
               ),
@@ -69,7 +72,7 @@ class SignupScreen extends StatelessWidget {
           ),
           const SizedBox(height: 35),
           InkWell(
-            onTap: (){},
+            onTap: () {},
             child: const Text.rich(
               TextSpan(
                 children: [
@@ -82,10 +85,7 @@ class SignupScreen extends StatelessWidget {
                   ),
                   TextSpan(
                     text: "Log In",
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600
-                    ),
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                   ),
                 ],
               ),
