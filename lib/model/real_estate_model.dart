@@ -81,6 +81,16 @@ List<House> realEstateModel = [
     size: "500",
     description: description,
   ),
+  House(
+    image: "assets/images/office building.jpg",
+    price: "119900",
+    name: "M&N Software House",
+    place: "Melbourne, Australia",
+    beds: "40",
+    baths: "6",
+    size: "500",
+    description: description,
+  ),
 ];
 
 String description = """
